@@ -1,0 +1,106 @@
+/* ΞΞΞΞΞΞΞΞΞΞΞΞΞ  general styles  ΞΞΞΞΞΞΞΞΞΞΞΞΞ */
+:root {
+    font-size: 14px;
+}
+
+/* Pour scroller d'une façon douce lorsqu'on se 
+    déplace d'un point A vers un point B sur le site. */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #75e6da;
+    width: auto;
+    font-family: 'Sriracha', cursive;
+    letter-spacing: .8px;
+}
+
+.navbar {
+    border-bottom: 3px solid #d4f1f4;
+    box-shadow: 0 0 10px 0 #011a2766;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #d4f1f4;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #75e6da;
+}
+
+.btn-outline-success {
+    color: #d4f1f4;
+    border-color: #d4f1f4;
+}
+
+.btn-outline-success:hover {
+    background-color: #75e6da;
+    color: #011a27;
+}
+
+nav img {
+    width: 100px;
+}
+
+h2, h3, h4 {
+    color: #011a27;
+    margin: 10px 5px 10px 15px;
+    padding: 0;
+}
+
+p {
+    margin: 0 10px 20px 15px;
+    padding-left: 3px;
+}
+
+/* ΞΞΞΞΞΞΞΞΞΞ  start animation title header  ΞΞΞΞΞΞΞΞΞΞ */
+.img-header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px -5px #011a2766;
+}
+   
+.header-contenant {
+    position: relative;
+}
+   
+.header-title h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #d4f1f4;
+    padding: 90px 0 0 15%;
+    text-shadow: -3px -2px 2px #a70202;
+    animation: title ease 5s;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: translateY(-130px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ΞΞΞΞΞΞΞΞΞΞ  end animation title header  ΞΞΞΞΞΞΞΞΞΞ */
+
